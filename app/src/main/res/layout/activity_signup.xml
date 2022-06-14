@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/halfyellbck"
+    tools:context=".SignupActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="357dp"
+        android:layout_height="245dp"
+        android:layout_margin="20dp"
+        app:srcCompat="@drawable/relaxtimelogo" />
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your Phone Number"
+        android:layout_centerInParent="true"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+       android:layout_centerHorizontal="true"/>
+
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:layout_marginBottom="20dp"
+        android:hint="Phone No."
+        android:inputType="phone" />
+
+    <Button
+        android:id="@+id/genrateotpbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phone"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/buttonbackground"
+        android:text="Submit"
+        android:textSize="20sp"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Otp"
+        android:inputType="number"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/genrateotpbtn"/>
+
+    <Button
+        android:id="@+id/btnverifyotp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/otp"
+        android:layout_marginBottom="20dp"
+        android:text="Verify Otp"
+        android:enabled="false"
+        android:textSize="20sp"
+        android:background="@drawable/buttonbackground"
+        android:textColor="@color/white"/>
+
+
+
+
+
+
+</RelativeLayout>

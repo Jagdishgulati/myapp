@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/maincolor"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="472dp"
+        android:layout_height="1210dp"
+        android:alpha="0.2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3"
+        app:srcCompat="@drawable/welsc" />
+
+    <TextView
+        android:id="@+id/Welcometextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alatsi"
+        android:text="Welcome"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/signupbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.915" />
+
+    <TextView
+        android:id="@+id/itstimetorelax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aclonica"
+        android:text="Its Time For Relax"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.779" />
+
+<!--    <Button-->
+<!--        android:id="@+id/loginbtn"-->
+<!--        android:layout_width="372dp"-->
+<!--        android:layout_height="49dp"-->
+<!--        android:background="@drawable/logbkbutton"-->
+<!--        android:text="Login"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:onClick="gotToLogin"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/signupbtn"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.487"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/Welcometextview"-->
+<!--        app:layout_constraintVertical_bias="0.842" />-->
+
+    <Button
+        android:id="@+id/signupbtn"
+        android:layout_width="372dp"
+        android:layout_height="49dp"
+        android:background="@drawable/buttonbackground"
+        android:onClick="gotToSignup"
+        android:text="Signup"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.874" />
+
+    <Button
+        android:id="@+id/skipbtn"
+        android:layout_width="48dp"
+        android:layout_height="49dp"
+        android:background="@drawable/skipbkbutton"
+        android:text="Skip"
+        android:onClick="gotToHome"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/itstimetorelax"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.064" />
+</androidx.constraintlayout.widget.ConstraintLayout>
